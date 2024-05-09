@@ -1,0 +1,75 @@
+.categorypagecontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem 0rem;
+}
+.productcatcardcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.categorybutton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.productcatcard {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+  background-color: #e9f3f6;
+  padding: 3rem;
+  border-radius: 2rem;
+}
+.productcatcard > img {
+  width: 20%;
+}
+.findstorecat {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17.69px;
+  text-align: center;
+  background-color: #ffc226;
+  color: white;
+  padding: 1rem 3rem;
+  border: none;
+  box-shadow: rgba(61, 228, 203, 1) -5px 5px;
+  transition: all 0.3s ease-in-out;
+  width: fit-content;
+}
+.ctproductright {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.findstorecat:hover {
+  box-shadow: none;
+}
+.medicalbutton {
+  width: 15%;
+}
+
+@media (max-width: 768px) {
+  .productcatcard {
+    flex-direction: column;
+    gap: 2rem !important;
+  }
+  .medicalbutton {
+    width: 50%;
+  }
+  .productcatcard {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+    background-color: #e9f3f6;
+    padding: 2rem 1rem;
+  }
+  .productcatcard > img {
+    width: 35%;
+  }
+}
