@@ -176,6 +176,10 @@ body::-webkit-scrollbar {
   margin: auto;
   aspect-ratio: 1/1;
 }
+#nectr,
+#sms {
+  cursor: pointer;
+}
 .sodas {
   background-color: #e0e8dc;
   font-size: 22px;
@@ -263,6 +267,7 @@ body::-webkit-scrollbar {
 }
 /* explore start */
 .exploremenu {
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -309,7 +314,7 @@ body::-webkit-scrollbar {
 }
 .recreation {
   background-color: transparent;
-  border: 1px solid;
+  border: none;
   padding: 0.8rem 2rem;
   border-radius: 0.5rem;
 }

@@ -22,3 +22,139 @@ AOS.init({
   mirror: false, // whether elements should animate out while scrolling past them
   anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
 });
+document.addEventListener("DOMContentLoaded", function () {
+  // Get references to elements
+  const nectrContainer = document.getElementById("nectr");
+  const smsContainer = document.getElementById("sms");
+  const nectrMenu = document.querySelector(".exploremenu li:nth-child(1)");
+  const smsMenu = document.querySelector(".exploremenu li:nth-child(2)");
+
+  // Hide SMS container by default
+  smsContainer.style.display = "none";
+
+  // Function to toggle between Nectr and SMS containers
+  function toggleContainers(showNectr) {
+    if (showNectr) {
+      nectrContainer.style.display = "flex";
+      smsContainer.style.display = "none";
+    } else {
+      nectrContainer.style.display = "none";
+      smsContainer.style.display = "flex";
+    }
+  }
+
+  // Function to add underline to active menu item
+  function setActiveMenu(menuItem) {
+    // Remove underline from all menu items
+    document.querySelectorAll(".exploremenu li").forEach((item) => {
+      item.style.textDecoration = "none";
+      item.style.borderBottom = "none";
+      item.style.borderRadius = "0";
+      item.style.padding = "0";
+    });
+    // Add underline to the selected menu item
+    menuItem.style.textDecoration = "none";
+    menuItem.style.borderBottom = "1px solid #000"; // Adjust color and thickness as needed
+    menuItem.style.borderRadius = "10rem"; // Adjust border radius as needed
+    menuItem.style.padding = "0.5rem";
+  }
+
+  // Set underline for default selected menu item (Nectr)
+  setActiveMenu(nectrMenu);
+
+  // Event listeners for menu items
+  nectrMenu.addEventListener("click", function () {
+    toggleContainers(true);
+    setActiveMenu(nectrMenu);
+  });
+
+  smsMenu.addEventListener("click", function () {
+    toggleContainers(false);
+    setActiveMenu(smsMenu);
+  });
+});
+// ****************************************************************************
+// JavaScript code to handle button clicks, toggle container visibility, and change button background color
+
+document.addEventListener("DOMContentLoaded", function () {
+  const nectrrecreationBtn = document.getElementById("nectrrecreationBtn");
+  const nectrmedicalBtn = document.getElementById("nectrmedicalBtn");
+  const nectrrecreationContainer = document.getElementById("nectrrecreation");
+  const nectrmedicalContainer = document.getElementById("nectrmedical");
+
+  // Function to add CSS style to selected button
+  function setSelectedButtonStyle(selectedButton) {
+    selectedButton.style.backgroundColor = "#e2e0df";
+    selectedButton.style.border = "none";
+  }
+
+  // Function to remove CSS style from unselected button
+  function resetButtonStyles() {
+    nectrrecreationBtn.style.backgroundColor = "";
+    nectrmedicalBtn.style.backgroundColor = "";
+  }
+
+  nectrrecreationBtn.addEventListener("click", function () {
+    nectrrecreationBtn.classList.add("selected");
+    nectrmedicalBtn.classList.remove("selected");
+    nectrrecreationContainer.style.display = "flex";
+    nectrmedicalContainer.style.display = "none";
+    resetButtonStyles();
+    setSelectedButtonStyle(nectrrecreationBtn);
+  });
+
+  nectrmedicalBtn.addEventListener("click", function () {
+    nectrmedicalBtn.classList.add("selected");
+    nectrrecreationBtn.classList.remove("selected");
+    nectrmedicalContainer.style.display = "flex";
+    nectrrecreationContainer.style.display = "none";
+    resetButtonStyles();
+    setSelectedButtonStyle(nectrmedicalBtn);
+  });
+
+  // Initially show nectrrecreation container and hide nectrmedical container
+  nectrrecreationContainer.style.display = "flex";
+  nectrmedicalContainer.style.display = "none";
+
+  // Set default background color for selected button
+  setSelectedButtonStyle(nectrrecreationBtn);
+});
+
+// *****************************************************************************************************************
+const smsrecreationBtn = document.getElementById("smsrecreationBtn");
+const smsbevragesBtn = document.getElementById("smsbevragesBtn");
+const smsrecreationContainer = document.getElementById("smsrecreation");
+const smsmedicalContainer = document.getElementById("smsmedical");
+
+function setSelectedButtonStyle(selectedButton) {
+  selectedButton.style.backgroundColor = "#e2e0df";
+  selectedButton.style.border = "none";
+}
+
+function resetButtonStyles() {
+  smsrecreationBtn.style.backgroundColor = "";
+  smsbevragesBtn.style.backgroundColor = "";
+}
+
+smsrecreationBtn.addEventListener("click", function () {
+  smsrecreationBtn.classList.add("selected");
+  smsbevragesBtn.classList.remove("selected");
+  smsrecreationContainer.style.display = "flex";
+  smsmedicalContainer.style.display = "none";
+  resetButtonStyles();
+  setSelectedButtonStyle(smsrecreationBtn);
+});
+
+smsbevragesBtn.addEventListener("click", function () {
+  smsbevragesBtn.classList.add("selected");
+  smsrecreationBtn.classList.remove("selected");
+  smsmedicalContainer.style.display = "flex";
+  smsrecreationContainer.style.display = "none";
+  resetButtonStyles();
+  setSelectedButtonStyle(smsbevragesBtn);
+});
+
+smsrecreationContainer.style.display = "flex";
+smsmedicalContainer.style.display = "none";
+
+setSelectedButtonStyle(smsrecreationBtn);

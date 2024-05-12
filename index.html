@@ -247,87 +247,300 @@
           <div class="headingfont text-center">Explore Flavors</div>
           <div>
             <ul class="exploremenu">
-              <li>NECTR BEVERAGES</li>
-              <li>SMS beverages</li>
-              <li>SMS edibles</li>
+              <li onclick="nectrbevrages()">NECTR BEVERAGES</li>
+              <li onclick="smsbevrages()">SMS beverages</li>
             </ul>
           </div>
-          <div class="explorerowthree container w-100 position-relative">
+          <!-- nectr container -->
+          <div
+            id="nectr"
+            class="explorerowthree container w-100 position-relative"
+          >
             <img class="leftcanimage" src="./Assests/canleftimage.svg" alt="" />
             <div class="exploreright">
               <div class="producttitle">Nectr Soda</div>
               <div>
-                <button class="recreation">RECREATIONAL</button>
-                <button class="recreation">Medical</button>
-              </div>
-              <div class="productdesc">
-                Blue ginger is a symphony of flavors that harmonize the sweet
-                and tart notes of plump blueberries with the warm kick of
-                freshly grated ginger root. Each sip is like stepping onto a
-                moss-covered trail, the tangy berries bursting forth, while the
-                ginger dances on your tongue. Available in 10mg and 100mg doses.
-              </div>
-              <div class="categorybuttonparent">
-                <button class="categorybuttonmenu">
-                  <img
-                    class="categorybuttonmenuimage"
-                    src="./Assests/buttonimagecan.svg"
-                    alt=""
-                  />
-                  Root Beer
+                <button id="nectrrecreationBtn" class="recreation selected">
+                  RECREATIONAL
                 </button>
-                <button class="categorybuttonmenu">
-                  <img
-                    class="categorybuttonmenuimage"
-                    src="./Assests/buttonimagecan.svg"
-                    alt=""
-                  />
-                  Root Beer</button
-                ><button class="categorybuttonmenu">
-                  <img
-                    class="categorybuttonmenuimage"
-                    src="./Assests/buttonimagecan.svg"
-                    alt=""
-                  />
-                  Root Beer</button
-                ><button class="categorybuttonmenu">
-                  <img
-                    class="categorybuttonmenuimage"
-                    src="./Assests/buttonimagecan.svg"
-                    alt=""
-                  />
-                  Root Beer</button
-                ><button class="categorybuttonmenu">
-                  <img
-                    class="categorybuttonmenuimage"
-                    src="./Assests/buttonimagecan.svg"
-                    alt=""
-                  />
-                  Root Beer</button
-                ><button class="categorybuttonmenu">
-                  <img
-                    class="categorybuttonmenuimage"
-                    src="./Assests/buttonimagecan.svg"
-                    alt=""
-                  />
-                  Root Beer</button
-                ><button class="categorybuttonmenu">
-                  <img
-                    class="categorybuttonmenuimage"
-                    src="./Assests/buttonimagecan.svg"
-                    alt=""
-                  />
-                  Root Beer</button
-                ><button class="categorybuttonmenu">
-                  <img
-                    class="categorybuttonmenuimage"
-                    src="./Assests/buttonimagecan.svg"
-                    alt=""
-                  />
-                  Root Beer
-                </button>
+                <button id="nectrmedicalBtn" class="recreation">Medical</button>
               </div>
-              <button class="btn btn-warning">Load More</button>
+              <!-- nectrrecreation container -->
+              <div id="nectrrecreation" class="exploreright">
+                <div class="productdesc">Nectr recreation model</div>
+                <div class="categorybuttonparent">
+                  <button class="categorybuttonmenu">
+                    <img
+                      class="categorybuttonmenuimage"
+                      src="./Assests/buttonimagecan.svg"
+                      alt=""
+                    />
+                    Root Beer
+                  </button>
+                  <button class="categorybuttonmenu">
+                    <img
+                      class="categorybuttonmenuimage"
+                      src="./Assests/buttonimagecan.svg"
+                      alt=""
+                    />
+                    Root Beer</button
+                  ><button class="categorybuttonmenu">
+                    <img
+                      class="categorybuttonmenuimage"
+                      src="./Assests/buttonimagecan.svg"
+                      alt=""
+                    />
+                    Root Beer</button
+                  ><button class="categorybuttonmenu">
+                    <img
+                      class="categorybuttonmenuimage"
+                      src="./Assests/buttonimagecan.svg"
+                      alt=""
+                    />
+                    Root Beer</button
+                  ><button class="categorybuttonmenu">
+                    <img
+                      class="categorybuttonmenuimage"
+                      src="./Assests/buttonimagecan.svg"
+                      alt=""
+                    />
+                    Root Beer</button
+                  ><button class="categorybuttonmenu">
+                    <img
+                      class="categorybuttonmenuimage"
+                      src="./Assests/buttonimagecan.svg"
+                      alt=""
+                    />
+                    Root Beer</button
+                  ><button class="categorybuttonmenu">
+                    <img
+                      class="categorybuttonmenuimage"
+                      src="./Assests/buttonimagecan.svg"
+                      alt=""
+                    />
+                    Root Beer</button
+                  ><button class="categorybuttonmenu">
+                    <img
+                      class="categorybuttonmenuimage"
+                      src="./Assests/buttonimagecan.svg"
+                      alt=""
+                    />
+                    Root Beer
+                  </button>
+                </div>
+                <button class="btn btn-warning">Load More</button>
+              </div>
+              <!-- nectrmedical container -->
+              <div id="nectrmedical" class="exploreright">
+                <div class="productdesc">NECTR Medical Content</div>
+                <div class="categorybuttonparent">
+                  <button class="categorybuttonmenu">
+                    <img
+                      class="categorybuttonmenuimage"
+                      src="./Assests/buttonimagecan.svg"
+                      alt=""
+                    />
+                    Root Beer
+                  </button>
+                  <button class="categorybuttonmenu">
+                    <img
+                      class="categorybuttonmenuimage"
+                      src="./Assests/buttonimagecan.svg"
+                      alt=""
+                    />
+                    Root Beer</button
+                  ><button class="categorybuttonmenu">
+                    <img
+                      class="categorybuttonmenuimage"
+                      src="./Assests/buttonimagecan.svg"
+                      alt=""
+                    />
+                    Root Beer</button
+                  ><button class="categorybuttonmenu">
+                    <img
+                      class="categorybuttonmenuimage"
+                      src="./Assests/buttonimagecan.svg"
+                      alt=""
+                    />
+                    Root Beer</button
+                  ><button class="categorybuttonmenu">
+                    <img
+                      class="categorybuttonmenuimage"
+                      src="./Assests/buttonimagecan.svg"
+                      alt=""
+                    />
+                    Root Beer</button
+                  ><button class="categorybuttonmenu">
+                    <img
+                      class="categorybuttonmenuimage"
+                      src="./Assests/buttonimagecan.svg"
+                      alt=""
+                    />
+                    Root Beer</button
+                  ><button class="categorybuttonmenu">
+                    <img
+                      class="categorybuttonmenuimage"
+                      src="./Assests/buttonimagecan.svg"
+                      alt=""
+                    />
+                    Root Beer</button
+                  ><button class="categorybuttonmenu">
+                    <img
+                      class="categorybuttonmenuimage"
+                      src="./Assests/buttonimagecan.svg"
+                      alt=""
+                    />
+                    Root Beer
+                  </button>
+                </div>
+                <button class="btn btn-warning">Load More</button>
+              </div>
+            </div>
+          </div>
+          <!-- sms container -->
+          <div
+            id="sms"
+            class="explorerowthree container w-100 position-relative"
+          >
+            <img class="leftcanimage" src="./Assests/canleftimage.svg" alt="" />
+            <div class="exploreright">
+              <div class="producttitle">SMS Soda</div>
+              <div>
+                <button id="smsrecreationBtn" class="recreation">
+                  RECREATIONAL
+                </button>
+                <button id="smsbevragesBtn" class="recreation">Medical</button>
+              </div>
+              <!-- sms recreation container -->
+              <div id="smsrecreation" class="exploreright">
+                <div class="productdesc">sms recreation content</div>
+                <div class="categorybuttonparent">
+                  <button class="categorybuttonmenu">
+                    <img
+                      class="categorybuttonmenuimage"
+                      src="./Assests/buttonimagecan.svg"
+                      alt=""
+                    />
+                    Root Beer
+                  </button>
+                  <button class="categorybuttonmenu">
+                    <img
+                      class="categorybuttonmenuimage"
+                      src="./Assests/buttonimagecan.svg"
+                      alt=""
+                    />
+                    Root Beer</button
+                  ><button class="categorybuttonmenu">
+                    <img
+                      class="categorybuttonmenuimage"
+                      src="./Assests/buttonimagecan.svg"
+                      alt=""
+                    />
+                    Root Beer</button
+                  ><button class="categorybuttonmenu">
+                    <img
+                      class="categorybuttonmenuimage"
+                      src="./Assests/buttonimagecan.svg"
+                      alt=""
+                    />
+                    Root Beer</button
+                  ><button class="categorybuttonmenu">
+                    <img
+                      class="categorybuttonmenuimage"
+                      src="./Assests/buttonimagecan.svg"
+                      alt=""
+                    />
+                    Root Beer</button
+                  ><button class="categorybuttonmenu">
+                    <img
+                      class="categorybuttonmenuimage"
+                      src="./Assests/buttonimagecan.svg"
+                      alt=""
+                    />
+                    Root Beer</button
+                  ><button class="categorybuttonmenu">
+                    <img
+                      class="categorybuttonmenuimage"
+                      src="./Assests/buttonimagecan.svg"
+                      alt=""
+                    />
+                    Root Beer</button
+                  ><button class="categorybuttonmenu">
+                    <img
+                      class="categorybuttonmenuimage"
+                      src="./Assests/buttonimagecan.svg"
+                      alt=""
+                    />
+                    Root Beer
+                  </button>
+                </div>
+                <button class="btn btn-warning">Load More</button>
+              </div>
+              <!-- sms recreation container -->
+              <div id="smsmedical" class="exploreright">
+                <div class="productdesc">sms medical content</div>
+                <div class="categorybuttonparent">
+                  <button class="categorybuttonmenu">
+                    <img
+                      class="categorybuttonmenuimage"
+                      src="./Assests/buttonimagecan.svg"
+                      alt=""
+                    />
+                    Root Beer
+                  </button>
+                  <button class="categorybuttonmenu">
+                    <img
+                      class="categorybuttonmenuimage"
+                      src="./Assests/buttonimagecan.svg"
+                      alt=""
+                    />
+                    Root Beer</button
+                  ><button class="categorybuttonmenu">
+                    <img
+                      class="categorybuttonmenuimage"
+                      src="./Assests/buttonimagecan.svg"
+                      alt=""
+                    />
+                    Root Beer</button
+                  ><button class="categorybuttonmenu">
+                    <img
+                      class="categorybuttonmenuimage"
+                      src="./Assests/buttonimagecan.svg"
+                      alt=""
+                    />
+                    Root Beer</button
+                  ><button class="categorybuttonmenu">
+                    <img
+                      class="categorybuttonmenuimage"
+                      src="./Assests/buttonimagecan.svg"
+                      alt=""
+                    />
+                    Root Beer</button
+                  ><button class="categorybuttonmenu">
+                    <img
+                      class="categorybuttonmenuimage"
+                      src="./Assests/buttonimagecan.svg"
+                      alt=""
+                    />
+                    Root Beer</button
+                  ><button class="categorybuttonmenu">
+                    <img
+                      class="categorybuttonmenuimage"
+                      src="./Assests/buttonimagecan.svg"
+                      alt=""
+                    />
+                    Root Beer</button
+                  ><button class="categorybuttonmenu">
+                    <img
+                      class="categorybuttonmenuimage"
+                      src="./Assests/buttonimagecan.svg"
+                      alt=""
+                    />
+                    Root Beer
+                  </button>
+                </div>
+                <button class="btn btn-warning">Load More</button>
+              </div>
             </div>
           </div>
           <img
@@ -336,8 +549,9 @@
             alt=""
           />
         </div>
+
         <!-- Testimonials  start-->
-        <div class="testimonialstart container">
+        <!-- <div class="testimonialstart container">
           <div class="headingfont text-center">What our customers</div>
           <div class="testirow1">
             <div class="tesitmonialcard">
@@ -463,7 +677,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
         <!-- Testimonials  end-->
 
         <!-- Footer Start -->
