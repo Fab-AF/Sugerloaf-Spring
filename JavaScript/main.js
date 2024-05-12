@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Function to add CSS style to selected button
   function setSelectedButtonStyle(selectedButton) {
     selectedButton.style.backgroundColor = "#e2e0df";
-    selectedButton.style.border = "none";
+    selectedButton.style.border = "1px solid #e2e0df";
   }
 
   // Function to remove CSS style from unselected button
@@ -128,7 +128,7 @@ const smsmedicalContainer = document.getElementById("smsmedical");
 
 function setSelectedButtonStyle(selectedButton) {
   selectedButton.style.backgroundColor = "#e2e0df";
-  selectedButton.style.border = "none";
+  selectedButton.style.border = "1px solid #e2e0df";
 }
 
 function resetButtonStyles() {

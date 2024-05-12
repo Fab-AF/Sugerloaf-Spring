@@ -324,6 +324,20 @@ body::-webkit-scrollbar {
   line-height: 26px;
   text-align: left;
 }
+.lodamore {
+  border: none;
+  background: orange;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 15.85px;
+  text-align: center;
+}
 .categorybuttonmenu {
   background-color: transparent;
   border: 1px solid;
