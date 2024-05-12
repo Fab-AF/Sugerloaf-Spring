@@ -88,6 +88,8 @@ body::-webkit-scrollbar {
 }
 .heropage {
   height: 100vh;
+  background-color: white;
+  z-index: 5;
 }
 .herotextcontent {
   width: 70%;
@@ -125,8 +127,13 @@ body::-webkit-scrollbar {
   align-items: center;
   justify-content: space-between;
 }
-.heropagetwoparent > img {
-  width: 50%;
+
+.heropagetwoparent img {
+  width: 45%;
+  transform: scale(1.7) !important;
+  z-index: -1;
+  position: relative;
+  left: 8%;
 }
 .card1 {
   background-color: #deeef4;
@@ -188,12 +195,12 @@ body::-webkit-scrollbar {
   width: 100%;
   padding: 0.8rem 0rem;
 }
-.ourbrandscontainer > div {
+/* .ourbrandscontainer > div {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
-}
+} */
 .ourbrandcard {
   border: 1px solid;
   border-radius: 1rem;
@@ -240,7 +247,6 @@ body::-webkit-scrollbar {
   border: 1px solid #664d3b;
   border-radius: 0.5rem;
   width: fit-content;
-  margin: auto;
   background-color: transparent;
   padding: 0.8rem 2rem;
   font-size: 14px;
