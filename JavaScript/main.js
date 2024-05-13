@@ -158,3 +158,218 @@ smsrecreationContainer.style.display = "flex";
 smsmedicalContainer.style.display = "none";
 
 setSelectedButtonStyle(smsrecreationBtn);
+
+// ******************************************NECTR CONTAINER****************************************************
+window.onload = function () {
+  shownectr1img();
+};
+function shownectr1img() {
+  // Hide all images
+  hideAllImages();
+  // Show only the image associated with this function
+  document.querySelector(".nectrrecreationimg1").style.display = "block";
+  removeYellowActiveStyle();
+  var button = document.getElementById("yellowactivebutton1");
+  button.classList.add("yellowactivebutton");
+}
+
+function shownectr2img() {
+  // Hide all images
+  hideAllImages();
+  // Show only the image associated with this function
+  document.querySelector(".nectrrecreationimg2").style.display = "block";
+  removeYellowActiveStyle();
+  var button = document.getElementById("yellowactivebutton2");
+  button.classList.add("yellowactivebutton");
+}
+
+function shownectr3img() {
+  // Hide all images
+  hideAllImages();
+  // Show only the image associated with this function
+  document.querySelector(".nectrrecreationimg3").style.display = "block";
+  removeYellowActiveStyle();
+  var button = document.getElementById("yellowactivebutton3");
+  button.classList.add("yellowactivebutton");
+}
+
+function shownectr4img() {
+  // Hide all images
+  hideAllImages();
+  // Show only the image associated with this function
+  document.querySelector(".nectrrecreationimg4").style.display = "block";
+  removeYellowActiveStyle();
+  var button = document.getElementById("yellowactivebutton4");
+  button.classList.add("yellowactivebutton");
+}
+
+function shownectr5img() {
+  // Hide all images
+  hideAllImages();
+  // Show only the image associated with this function
+  document.querySelector(".nectrrecreationimg5").style.display = "block";
+  removeYellowActiveStyle();
+  var button = document.getElementById("yellowactivebutton5");
+  button.classList.add("yellowactivebutton");
+}
+
+function showmedical1img() {
+  // Hide all images
+  hideAllImages();
+  // Show only the image associated with this function
+  document.querySelector(".nectrmedicalimg1").style.display = "block";
+  removeYellowActiveStyle();
+  var button = document.getElementById("yellowactivebutton6");
+  button.classList.add("yellowactivebutton");
+}
+
+function showmedical2img() {
+  // Hide all images
+  hideAllImages();
+  // Show only the image associated with this function
+  document.querySelector(".nectrmedicalimg2").style.display = "block";
+  removeYellowActiveStyle();
+  var button = document.getElementById("yellowactivebutton7");
+  button.classList.add("yellowactivebutton");
+}
+
+function showmedical3img() {
+  // Hide all images
+  hideAllImages();
+  // Show only the image associated with this function
+  document.querySelector(".nectrmedicalimg3").style.display = "block";
+  removeYellowActiveStyle();
+  var button = document.getElementById("yellowactivebutton8");
+  button.classList.add("yellowactivebutton");
+}
+
+function showmedical4img() {
+  // Hide all images
+  hideAllImages();
+  // Show only the image associated with this function
+  document.querySelector(".nectrmedicalimg4").style.display = "block";
+  removeYellowActiveStyle();
+  var button = document.getElementById("yellowactivebutton9");
+  button.classList.add("yellowactivebutton");
+}
+
+function showmedical5img() {
+  // Hide all images
+  hideAllImages();
+  // Show only the image associated with this function
+  document.querySelector(".nectrmedicalimg5").style.display = "block";
+  removeYellowActiveStyle();
+  var button = document.getElementById("yellowactivebutton10");
+  button.classList.add("yellowactivebutton");
+}
+
+// Function to hide all images
+function hideAllImages() {
+  var images = document.querySelectorAll(".leftcanimage");
+  images.forEach(function (image) {
+    image.style.display = "none";
+  });
+}
+function removeYellowActiveStyle() {
+  var buttons = document.querySelectorAll(".categorybuttonmenu");
+  buttons.forEach(function (button) {
+    button.classList.remove("yellowactivebutton");
+  });
+}
+
+// *********************************************SMS CONTAINER JS************************************************************
+
+function smsshownectr1img() {
+  hideAllImages();
+  document.querySelector(".smsnectrrecreationimg1").style.display = "block";
+  removeYellowActiveStyle();
+  var button = document.getElementById("yellowactivebutton11");
+  button.classList.add("yellowactivebutton");
+}
+
+function smsshownectr2img() {
+  hideAllImages();
+  document.querySelector(".smsnectrrecreationimg2").style.display = "block";
+  removeYellowActiveStyle();
+  var button = document.getElementById("yellowactivebutton12");
+  button.classList.add("yellowactivebutton");
+}
+
+function smsshownectr3img() {
+  hideAllImages();
+  document.querySelector(".smsnectrrecreationimg3").style.display = "block";
+  removeYellowActiveStyle();
+  var button = document.getElementById("yellowactivebutton13");
+  button.classList.add("yellowactivebutton");
+}
+
+function smsshownectr4img() {
+  hideAllImages();
+  document.querySelector(".smsnectrrecreationimg4").style.display = "block";
+  removeYellowActiveStyle();
+  var button = document.getElementById("yellowactivebutton14");
+  button.classList.add("yellowactivebutton");
+}
+
+function smsshownectr5img() {
+  hideAllImages();
+  document.querySelector(".smsnectrrecreationimg5").style.display = "block";
+  removeYellowActiveStyle();
+  var button = document.getElementById("yellowactivebutton15");
+  button.classList.add("yellowactivebutton");
+}
+
+function smsshowmedical1img() {
+  hideAllImages();
+  document.querySelector(".smsnectrmedicalimg1").style.display = "block";
+  removeYellowActiveStyle();
+  var button = document.getElementById("yellowactivebutton16");
+  button.classList.add("yellowactivebutton");
+}
+
+function smsshowmedical2img() {
+  hideAllImages();
+  document.querySelector(".smsnectrmedicalimg2").style.display = "block";
+  removeYellowActiveStyle();
+  var button = document.getElementById("yellowactivebutton17");
+  button.classList.add("yellowactivebutton");
+}
+
+function smsshowmedical3img() {
+  hideAllImages();
+  document.querySelector(".smsnectrmedicalimg3").style.display = "block";
+  removeYellowActiveStyle();
+  var button = document.getElementById("yellowactivebutton18");
+  button.classList.add("yellowactivebutton");
+}
+
+function smsshowmedical4img() {
+  hideAllImages();
+  document.querySelector(".smsnectrmedicalimg4").style.display = "block";
+  removeYellowActiveStyle();
+  var button = document.getElementById("yellowactivebutton19");
+  button.classList.add("yellowactivebutton");
+}
+
+function smsshowmedical5img() {
+  hideAllImages();
+  document.querySelector(".smsnectrmedicalimg5").style.display = "block";
+  removeYellowActiveStyle();
+  var button = document.getElementById("yellowactivebutton20");
+  button.classList.add("yellowactivebutton");
+}
+
+// Function to hide all images
+function hideAllImages() {
+  var images = document.querySelectorAll(".leftcanimage");
+  images.forEach(function (image) {
+    image.style.display = "none";
+  });
+}
+
+function removeYellowActiveStyle() {
+  var buttons = document.querySelectorAll(".categorybuttonmenu");
+  buttons.forEach(function (button) {
+    button.classList.remove("yellowactivebutton");
+  });
+}
