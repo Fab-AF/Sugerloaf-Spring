@@ -171,6 +171,7 @@ function shownectr1img() {
   removeYellowActiveStyle();
   var button = document.getElementById("yellowactivebutton1");
   button.classList.add("yellowactivebutton");
+  console.log("called");
 }
 
 function shownectr2img() {
@@ -181,8 +182,8 @@ function shownectr2img() {
   removeYellowActiveStyle();
   var button = document.getElementById("yellowactivebutton2");
   button.classList.add("yellowactivebutton");
+  console.log("called");
 }
-
 function shownectr3img() {
   // Hide all images
   hideAllImages();
@@ -191,9 +192,25 @@ function shownectr3img() {
   removeYellowActiveStyle();
   var button = document.getElementById("yellowactivebutton3");
   button.classList.add("yellowactivebutton");
+  console.log("called");
 }
 
+// function shownectr3img() {
+//   console.log("called");
+
+//   // Hide all images
+//   hideAllImages();
+//   // Show only the image associated with this function
+//   document.querySelector(".nectrrecreationimg3").style.display = "block";
+//   removeYellowActiveStyle();
+//   var button = document.getElementById("yellowactivebutton3");
+//   button.classList.add("yellowactivebutton");
+//   console.log("called");
+// }
+
 function shownectr4img() {
+  console.log("called");
+
   // Hide all images
   hideAllImages();
   // Show only the image associated with this function
@@ -201,9 +218,12 @@ function shownectr4img() {
   removeYellowActiveStyle();
   var button = document.getElementById("yellowactivebutton4");
   button.classList.add("yellowactivebutton");
+  console.log("called");
 }
 
 function shownectr5img() {
+  console.log("called");
+
   // Hide all images
   hideAllImages();
   // Show only the image associated with this function
@@ -211,6 +231,7 @@ function shownectr5img() {
   removeYellowActiveStyle();
   var button = document.getElementById("yellowactivebutton5");
   button.classList.add("yellowactivebutton");
+  console.log("called");
 }
 
 function showmedical1img() {
@@ -221,6 +242,7 @@ function showmedical1img() {
   removeYellowActiveStyle();
   var button = document.getElementById("yellowactivebutton6");
   button.classList.add("yellowactivebutton");
+  console.log("called");
 }
 
 function showmedical2img() {
@@ -231,6 +253,7 @@ function showmedical2img() {
   removeYellowActiveStyle();
   var button = document.getElementById("yellowactivebutton7");
   button.classList.add("yellowactivebutton");
+  console.log("called");
 }
 
 function showmedical3img() {
@@ -241,6 +264,7 @@ function showmedical3img() {
   removeYellowActiveStyle();
   var button = document.getElementById("yellowactivebutton8");
   button.classList.add("yellowactivebutton");
+  console.log("called");
 }
 
 function showmedical4img() {
@@ -251,6 +275,7 @@ function showmedical4img() {
   removeYellowActiveStyle();
   var button = document.getElementById("yellowactivebutton9");
   button.classList.add("yellowactivebutton");
+  console.log("called");
 }
 
 function showmedical5img() {
@@ -261,6 +286,7 @@ function showmedical5img() {
   removeYellowActiveStyle();
   var button = document.getElementById("yellowactivebutton10");
   button.classList.add("yellowactivebutton");
+  console.log("called");
 }
 
 // Function to hide all images

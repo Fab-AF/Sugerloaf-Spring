@@ -266,6 +266,13 @@ body::-webkit-scrollbar {
   color: white;
 }
 /* explore start */
+.canimageparent {
+  background-image: url(../Assests/leftbottleparentbg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 80vh;
+}
 .exploremenu {
   cursor: pointer;
   display: flex;
@@ -291,15 +298,28 @@ body::-webkit-scrollbar {
 
 .leftcanimage {
   /* height: 100vh; */
-  width: 35%;
+
+  width: 30%;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%);
 }
 .explorerowthree {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 4rem;
 }
 .exploreright {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 50%;
+}
+.nestedexploreright {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -377,6 +397,7 @@ body::-webkit-scrollbar {
   bottom: 0;
   right: 0;
   width: 50%;
+  z-index: -1;
 }
 /* explore end */
 /* testionial start */
