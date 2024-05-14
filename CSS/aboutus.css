@@ -74,16 +74,17 @@
   width: 50%;
 }
 .ourmission {
-  padding: 4rem 0rem;
+  padding: 3rem 3rem !important;
   margin: 2rem 0rem;
   border-radius: 1rem;
   background-color: #e9f3f6;
+  gap: 5rem;
 }
 .ourvision {
-  padding: 4rem 0rem;
+  padding: 3rem 3rem !important;
   margin: 2rem 0rem;
   border-radius: 1rem;
-
+  gap: 5rem;
   background-color: #107e6e;
 }
 .ourvision .blackheadingfont {
@@ -101,9 +102,18 @@
 }
 .ourvisionleft {
   width: 50%;
+  height: auto;
+  background-color: #e9f3f6;
+  border-radius: 30% 70% 70% 30% / 40% 45% 55% 60%;
 }
 .ourvisionright {
   width: 50%;
+}
+.ourmissionleft {
+  width: 50%;
+  height: auto;
+  background-color: #107e6e;
+  border-radius: 30% 70% 70% 30% / 40% 45% 55% 60%;
 }
 @media (max-width: 768px) {
   .abtheroparent {
@@ -134,7 +144,7 @@
   .ourvision,
   .ourmission {
     flex-direction: column;
-    padding: 2rem 0rem;
+    padding: 2rem 0rem !important;
   }
   .ourmissionright,
   .ourvisionright {
