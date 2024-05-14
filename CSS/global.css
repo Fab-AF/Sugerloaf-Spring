@@ -639,6 +639,7 @@ body::-webkit-scrollbar {
   .heropagetwoparent > img {
     display: none;
   }
+
   /* explore  */
   .explorerowthree {
     flex-direction: column;

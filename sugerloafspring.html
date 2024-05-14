@@ -99,14 +99,23 @@
         <div class="categorypagecontainer container">
           <div class="blackheadingfont">Sugerloaf Spring Beverages</div>
           <div class="categorybutton">
-            <button class="btn btn-outline-success medicalbutton">
+            <button
+              class="btn btn-outline-success medicalbutton"
+              id="medicalButton"
+            >
               Medical
             </button>
-            <button class="btn btn-outline-success medicalbutton">
-              SMS bevrages
+            <button
+              class="btn btn-outline-success medicalbutton"
+              id="smsButton"
+            >
+              SMS beverages
             </button>
           </div>
-          <div class="productcatcardcontainer">
+          <!-- medical container -->
+          <div id="medicalContainer" class="productcatcardcontainer">
+            <h1>Medical Container</h1>
+
             <div
               data-aos="fade-up"
               data-aos-easing="ease-in-out"
@@ -130,75 +139,14 @@
                 <button class="findstorecat">Find Store</button>
               </div>
             </div>
-            <div
-              data-aos="fade-up"
-              data-aos-easing="ease-in-out"
-              data-aos-duration="500"
-              class="productcatcard"
-            >
-              <img src="./Assests/categoryproductimage.svg" alt="" />
-              <div class="ctproductright">
-                <div class="blackheadingfont text-start">Orange soda</div>
-                <div class="subheadingfont">
-                  A sun-kissed delight that captures the essence of citrus
-                  groves in every effervescent sip. This liquid sunshine dances
-                  on your taste buds balancing sweetness with a zesty kick
-                </div>
-                <div class="d-flex align-items-center flex-wrap gap-2">
-                  <button class="categorybuttonmenu">THC : 100mg</button>
-                  <button class="categorybuttonmenu">size : 350ml</button>
-                  <button class="categorybuttonmenu">calaroies : 150ml</button>
-                  <button class="categorybuttonmenu">sugar : 100mg</button>
-                </div>
-                <button class="findstorecat">Find Store</button>
-              </div>
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-easing="ease-in-out"
-              data-aos-duration="500"
-              class="productcatcard"
-            >
-              <img src="./Assests/categoryproductimage.svg" alt="" />
-              <div class="ctproductright">
-                <div class="blackheadingfont text-start">Orange soda</div>
-                <div class="subheadingfont">
-                  A sun-kissed delight that captures the essence of citrus
-                  groves in every effervescent sip. This liquid sunshine dances
-                  on your taste buds balancing sweetness with a zesty kick
-                </div>
-                <div class="d-flex align-items-center flex-wrap gap-2">
-                  <button class="categorybuttonmenu">THC : 100mg</button>
-                  <button class="categorybuttonmenu">size : 350ml</button>
-                  <button class="categorybuttonmenu">calaroies : 150ml</button>
-                  <button class="categorybuttonmenu">sugar : 100mg</button>
-                </div>
-                <button class="findstorecat">Find Store</button>
-              </div>
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-easing="ease-in-out"
-              data-aos-duration="500"
-              class="productcatcard"
-            >
-              <img src="./Assests/categoryproductimage.svg" alt="" />
-              <div class="ctproductright">
-                <div class="blackheadingfont text-start">Orange soda</div>
-                <div class="subheadingfont">
-                  A sun-kissed delight that captures the essence of citrus
-                  groves in every effervescent sip. This liquid sunshine dances
-                  on your taste buds balancing sweetness with a zesty kick
-                </div>
-                <div class="d-flex align-items-center flex-wrap gap-2">
-                  <button class="categorybuttonmenu">THC : 100mg</button>
-                  <button class="categorybuttonmenu">size : 350ml</button>
-                  <button class="categorybuttonmenu">calaroies : 150ml</button>
-                  <button class="categorybuttonmenu">sugar : 100mg</button>
-                </div>
-                <button class="findstorecat">Find Store</button>
-              </div>
-            </div>
+          </div>
+          <!-- smsbevrages -->
+          <div
+            id="smsContainer"
+            class="productcatcardcontainer"
+            style="display: none"
+          >
+            <h1>SMS Container</h1>
             <div
               data-aos="fade-up"
               data-aos-easing="ease-in-out"
@@ -296,6 +244,9 @@
       <!-- Footer End -->
     </div>
   </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="./JavaScript/main.js"></script>
+  <script src="./JavaScript/sugerloafspring.js"></script>
 </html>
