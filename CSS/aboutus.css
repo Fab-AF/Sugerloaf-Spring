@@ -145,13 +145,39 @@
   .aboutsecondhero > img {
     width: 100%;
   }
-  .ourvision,
+  .ourvision {
+    flex-direction: column-reverse;
+    padding: 2rem 0rem !important;
+  }
   .ourmission {
     flex-direction: column;
     padding: 2rem 0rem !important;
   }
+  .ourmissionleft img {
+    mix-blend-mode: multiply;
+    width: 100%;
+  }
+  .ourmissionleft {
+    width: 70%;
+    margin: auto;
+  }
+  .ourvisionleft {
+    width: 70%;
+
+    margin: auto;
+  }
+  .ourvisionleft img,
+  .ourmissionleft img {
+    mix-blend-mode: multiply;
+    width: 100%;
+  }
   .ourmissionright,
   .ourvisionright {
     width: 100%;
+    padding: 0rem 1rem;
+  }
+  .ourmission .subheading {
+    font-size: 16px;
+    line-height: 30px;
   }
 }

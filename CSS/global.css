@@ -612,7 +612,7 @@ body::-webkit-scrollbar {
     color: var(--navyblue);
   }
   .blackheadingfont {
-    font-size: 28px;
+    font-size: 22px;
     font-weight: 700;
     line-height: 30px;
     text-align: center;
@@ -678,26 +678,59 @@ body::-webkit-scrollbar {
   .explorerowthree {
     flex-direction: column;
   }
+  .loadmore {
+    padding: 0.7rem 1rem;
+  }
   .exploreright {
     justify-content: space-between;
+    width: 100%;
+  }
+  .categorybuttonmenu {
+    font-size: 16px;
+  }
+  .exploremenu {
+    gap: 2rem;
+  }
+  .recreation {
+    padding: 0.8rem 1rem;
   }
   .leftcanimage {
     /* height: 100vh; */
     width: 100%;
     aspect-ratio: 1 / 1;
+    object-fit: contain;
   }
   .categorybuttonmenu {
     padding: 0.5rem 0.5rem;
     justify-content: center;
     align-items: center;
-    gap: 0rem;
+    gap: 1rem;
   }
   .categorybuttonparent {
     justify-content: center;
   }
+  .canimageparent {
+    height: 30vh;
+    width: 60% !important;
+    margin: auto;
+  }
+  .exploreright {
+    align-items: center;
+  }
+  .exploreright > .producttitle {
+    font-size: 30px;
+    line-height: 20px;
+  }
+  .exploreflavorscontainer {
+    gap: 1rem;
+    padding: 1rem 0rem;
+  }
+  .exploreflavorscontainer .text-decoration-none {
+    margin: auto;
+  }
   /* footer */
   .upperfootercontainer > div {
-    width: 80%;
+    width: 90%;
   }
   .lfooterrow1 {
     flex-direction: column;
