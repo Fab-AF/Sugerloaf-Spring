@@ -299,11 +299,19 @@ body::-webkit-scrollbar {
 .leftcanimage {
   /* height: 100vh; */
 
-  width: 30%;
+  /* width: 30%;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%); */
+
+  height: 70%;
+  /* width: 53%; */
   position: absolute;
   bottom: 5%;
   left: 50%;
   transform: translate(-50%);
+  mix-blend-mode: multiply;
 }
 .explorerowthree {
   display: flex;
