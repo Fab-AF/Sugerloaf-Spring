@@ -433,6 +433,7 @@ body::-webkit-scrollbar {
   font-weight: 400;
   line-height: 24px;
   text-align: left;
+  text-wrap: wrap;
 }
 .userprofiletestimonial {
   width: 20%;
@@ -445,6 +446,8 @@ body::-webkit-scrollbar {
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .testirow2 {
   display: flex;
@@ -452,6 +455,8 @@ body::-webkit-scrollbar {
   align-items: center;
   gap: 2rem;
   width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .tesitmonialcard {
@@ -459,6 +464,35 @@ body::-webkit-scrollbar {
   border-radius: 1rem;
   padding: 1rem 2rem;
   width: 33%;
+}
+/* Animation keyframes for left to right */
+@keyframes moveLeftToRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Animation keyframes for right to left */
+@keyframes moveRightToLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Apply animation to testirow1 */
+.testirow1 {
+  animation: moveLeftToRight 50s linear infinite;
+}
+
+/* Apply animation to testirow2 */
+.testirow2 {
+  animation: moveRightToLeft 50s linear infinite;
 }
 
 /* testimonial end */
