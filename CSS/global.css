@@ -386,6 +386,31 @@ body::-webkit-scrollbar {
   color: #664d3b !important;
   border: 1px solid #664d3b;
 }
+.rootcolour {
+  background-color: #745126 !important;
+  color: white !important;
+}
+.orangecolor {
+  background-color: #eb9d47 !important;
+  color: white !important;
+}
+.bluecolour {
+  background-color: #2e2d4a !important;
+  color: white !important;
+}
+.pinkcolour {
+  background-color: #e87eaa !important;
+  color: white !important;
+}
+.darkpinkcolour {
+  background-color: #e64772 !important;
+  color: white !important;
+}
+.active-menu-item {
+  border-bottom: 1px solid #000;
+  border-radius: 10rem;
+  padding: 0.5rem;
+}
 
 .lodamore {
   border: none;
@@ -400,6 +425,10 @@ body::-webkit-scrollbar {
   font-weight: 600;
   line-height: 15.85px;
   text-align: center;
+}
+.lodamore:hover {
+  background: #655449 !important;
+  transition: all 0.3s ease-in-out !important;
 }
 .categorybuttonmenu {
   background-color: transparent;

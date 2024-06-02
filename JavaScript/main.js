@@ -73,219 +73,113 @@ document.addEventListener("DOMContentLoaded", function () {
     setActiveMenu(smsMenu);
   });
 });
-// ****************************************************************************
-// JavaScript code to handle button clicks, toggle container visibility, and change button background color
-
-document.addEventListener("DOMContentLoaded", function () {
-  const nectrrecreationBtn = document.getElementById("nectrrecreationBtn");
-  const nectrmedicalBtn = document.getElementById("nectrmedicalBtn");
-  const nectrrecreationContainer = document.getElementById("nectrrecreation");
-  const nectrmedicalContainer = document.getElementById("nectrmedical");
-
-  // Function to add CSS style to selected button
-  function setSelectedButtonStyle(selectedButton) {
-    selectedButton.style.backgroundColor = "#e2e0df";
-    selectedButton.style.border = "1px solid #e2e0df";
-  }
-
-  // Function to remove CSS style from unselected button
-  function resetButtonStyles() {
-    nectrrecreationBtn.style.backgroundColor = "";
-    nectrmedicalBtn.style.backgroundColor = "";
-  }
-
-  nectrrecreationBtn.addEventListener("click", function () {
-    nectrrecreationBtn.classList.add("selected");
-    nectrmedicalBtn.classList.remove("selected");
-    nectrrecreationContainer.style.display = "flex";
-    nectrmedicalContainer.style.display = "none";
-    resetButtonStyles();
-    setSelectedButtonStyle(nectrrecreationBtn);
-  });
-
-  nectrmedicalBtn.addEventListener("click", function () {
-    nectrmedicalBtn.classList.add("selected");
-    nectrrecreationBtn.classList.remove("selected");
-    nectrmedicalContainer.style.display = "flex";
-    nectrrecreationContainer.style.display = "none";
-    resetButtonStyles();
-    setSelectedButtonStyle(nectrmedicalBtn);
-  });
-
-  // Initially show nectrrecreation container and hide nectrmedical container
-  nectrrecreationContainer.style.display = "flex";
-  nectrmedicalContainer.style.display = "none";
-
-  // Set default background color for selected button
-  setSelectedButtonStyle(nectrrecreationBtn);
-});
-
-// *****************************************************************************************************************
-const smsrecreationBtn = document.getElementById("smsrecreationBtn");
-const smsbevragesBtn = document.getElementById("smsbevragesBtn");
-const smsrecreationContainer = document.getElementById("smsrecreation");
-const smsmedicalContainer = document.getElementById("smsmedical");
-
-function setSelectedButtonStyle(selectedButton) {
-  selectedButton.style.backgroundColor = "#e2e0df";
-  selectedButton.style.border = "1px solid #e2e0df";
-}
-
-function resetButtonStyles() {
-  smsrecreationBtn.style.backgroundColor = "";
-  smsbevragesBtn.style.backgroundColor = "";
-}
-
-smsrecreationBtn.addEventListener("click", function () {
-  smsrecreationBtn.classList.add("selected");
-  smsbevragesBtn.classList.remove("selected");
-  smsrecreationContainer.style.display = "flex";
-  smsmedicalContainer.style.display = "none";
-  resetButtonStyles();
-  setSelectedButtonStyle(smsrecreationBtn);
-});
-
-smsbevragesBtn.addEventListener("click", function () {
-  smsbevragesBtn.classList.add("selected");
-  smsrecreationBtn.classList.remove("selected");
-  smsmedicalContainer.style.display = "flex";
-  smsrecreationContainer.style.display = "none";
-  resetButtonStyles();
-  setSelectedButtonStyle(smsbevragesBtn);
-});
-
-smsrecreationContainer.style.display = "flex";
-smsmedicalContainer.style.display = "none";
-
-setSelectedButtonStyle(smsrecreationBtn);
 
 // ******************************************NECTR CONTAINER****************************************************
+function updateLoadMoreButtonColor(colorClass) {
+  var loadMoreButtons = document.querySelectorAll(".lodamore");
+  loadMoreButtons.forEach(function (button) {
+    button.classList.remove(
+      "rootcolour",
+      "orangecolor",
+      "bluecolour",
+      "pinkcolour",
+      "darkpinkcolour"
+    );
+    button.classList.add(colorClass);
+  });
+}
+
 window.onload = function () {
   shownectr1img();
 };
+
 function shownectr1img() {
-  // Hide all images
   hideAllImages();
-  // Show only the image associated with this function
   document.querySelector(".nectrrecreationimg1").style.display = "block";
   removeYellowActiveStyle();
   var button = document.getElementById("yellowactivebutton1");
-  button.classList.add("yellowactivebutton");
+  button.classList.add("rootcolour");
+  updateLoadMoreButtonColor("rootcolour");
   console.log("called");
 }
 
 function shownectr2img() {
-  // Hide all images
   hideAllImages();
-  // Show only the image associated with this function
   document.querySelector(".nectrrecreationimg2").style.display = "block";
   removeYellowActiveStyle();
   var button = document.getElementById("yellowactivebutton2");
-  button.classList.add("yellowactivebutton");
+  button.classList.add("orangecolor");
+  updateLoadMoreButtonColor("orangecolor");
   console.log("called");
 }
+
 function shownectr3img() {
-  // Hide all images
   hideAllImages();
-  // Show only the image associated with this function
   document.querySelector(".nectrrecreationimg3").style.display = "block";
   removeYellowActiveStyle();
   var button = document.getElementById("yellowactivebutton3");
-  button.classList.add("yellowactivebutton");
+  button.classList.add("bluecolour");
+  updateLoadMoreButtonColor("bluecolour");
   console.log("called");
 }
 
-// function shownectr3img() {
-//   console.log("called");
-
-//   // Hide all images
-//   hideAllImages();
-//   // Show only the image associated with this function
-//   document.querySelector(".nectrrecreationimg3").style.display = "block";
-//   removeYellowActiveStyle();
-//   var button = document.getElementById("yellowactivebutton3");
-//   button.classList.add("yellowactivebutton");
-//   console.log("called");
-// }
-
 function shownectr4img() {
-  console.log("called");
-
-  // Hide all images
   hideAllImages();
-  // Show only the image associated with this function
   document.querySelector(".nectrrecreationimg4").style.display = "block";
   removeYellowActiveStyle();
   var button = document.getElementById("yellowactivebutton4");
-  button.classList.add("yellowactivebutton");
+  button.classList.add("pinkcolour");
+  updateLoadMoreButtonColor("pinkcolour");
   console.log("called");
 }
 
 function shownectr5img() {
-  console.log("called");
-
-  // Hide all images
   hideAllImages();
-  // Show only the image associated with this function
   document.querySelector(".nectrrecreationimg5").style.display = "block";
   removeYellowActiveStyle();
   var button = document.getElementById("yellowactivebutton5");
-  button.classList.add("yellowactivebutton");
+  button.classList.add("rootcolour");
+  updateLoadMoreButtonColor("rootcolour");
+  console.log("called");
+}
+
+function shownectr6img() {
+  hideAllImages();
+  document.querySelector(".nectrrecreationimg6").style.display = "block";
+  removeYellowActiveStyle();
+  var button = document.getElementById("yellowactivebutton6");
+  button.classList.add("bluecolour");
+  updateLoadMoreButtonColor("bluecolour");
   console.log("called");
 }
 
 function showmedical1img() {
-  // Hide all images
   hideAllImages();
-  // Show only the image associated with this function
   document.querySelector(".nectrmedicalimg1").style.display = "block";
   removeYellowActiveStyle();
-  var button = document.getElementById("yellowactivebutton6");
-  button.classList.add("yellowactivebutton");
+  var button = document.getElementById("yellowactivebutton7");
+  button.classList.add("rootcolour");
+  updateLoadMoreButtonColor("rootcolour");
   console.log("called");
 }
 
 function showmedical2img() {
-  // Hide all images
   hideAllImages();
-  // Show only the image associated with this function
   document.querySelector(".nectrmedicalimg2").style.display = "block";
   removeYellowActiveStyle();
-  var button = document.getElementById("yellowactivebutton7");
-  button.classList.add("yellowactivebutton");
+  var button = document.getElementById("yellowactivebutton8");
+  button.classList.add("orangecolor");
+  updateLoadMoreButtonColor("orangecolor");
   console.log("called");
 }
 
 function showmedical3img() {
-  // Hide all images
   hideAllImages();
-  // Show only the image associated with this function
   document.querySelector(".nectrmedicalimg3").style.display = "block";
   removeYellowActiveStyle();
-  var button = document.getElementById("yellowactivebutton8");
-  button.classList.add("yellowactivebutton");
-  console.log("called");
-}
-
-function showmedical4img() {
-  // Hide all images
-  hideAllImages();
-  // Show only the image associated with this function
-  document.querySelector(".nectrmedicalimg4").style.display = "block";
-  removeYellowActiveStyle();
   var button = document.getElementById("yellowactivebutton9");
-  button.classList.add("yellowactivebutton");
-  console.log("called");
-}
-
-function showmedical5img() {
-  // Hide all images
-  hideAllImages();
-  // Show only the image associated with this function
-  document.querySelector(".nectrmedicalimg5").style.display = "block";
-  removeYellowActiveStyle();
-  var button = document.getElementById("yellowactivebutton10");
-  button.classList.add("yellowactivebutton");
+  button.classList.add("bluecolour");
+  updateLoadMoreButtonColor("bluecolour");
   console.log("called");
 }
 
@@ -296,10 +190,16 @@ function hideAllImages() {
     image.style.display = "none";
   });
 }
+
 function removeYellowActiveStyle() {
   var buttons = document.querySelectorAll(".categorybuttonmenu");
   buttons.forEach(function (button) {
     button.classList.remove("yellowactivebutton");
+    button.classList.remove("rootcolour");
+    button.classList.remove("orangecolor");
+    button.classList.remove("bluecolour");
+    button.classList.remove("pinkcolour");
+    button.classList.remove("darkpinkcolour");
   });
 }
 
@@ -310,7 +210,8 @@ function smsshownectr1img() {
   document.querySelector(".smsnectrrecreationimg1").style.display = "block";
   removeYellowActiveStyle();
   var button = document.getElementById("yellowactivebutton11");
-  button.classList.add("yellowactivebutton");
+  button.classList.add("pinkcolour");
+  updateLoadMoreButtonColor("pinkcolour");
 }
 
 function smsshownectr2img() {
@@ -318,7 +219,8 @@ function smsshownectr2img() {
   document.querySelector(".smsnectrrecreationimg2").style.display = "block";
   removeYellowActiveStyle();
   var button = document.getElementById("yellowactivebutton12");
-  button.classList.add("yellowactivebutton");
+  button.classList.add("orangecolor");
+  updateLoadMoreButtonColor("orangecolor");
 }
 
 function smsshownectr3img() {
@@ -326,7 +228,8 @@ function smsshownectr3img() {
   document.querySelector(".smsnectrrecreationimg3").style.display = "block";
   removeYellowActiveStyle();
   var button = document.getElementById("yellowactivebutton13");
-  button.classList.add("yellowactivebutton");
+  button.classList.add("darkpinkcolour");
+  updateLoadMoreButtonColor("darkpinkcolour");
 }
 
 function smsshownectr4img() {
@@ -334,7 +237,8 @@ function smsshownectr4img() {
   document.querySelector(".smsnectrrecreationimg4").style.display = "block";
   removeYellowActiveStyle();
   var button = document.getElementById("yellowactivebutton14");
-  button.classList.add("yellowactivebutton");
+  button.classList.add("pinkcolour");
+  updateLoadMoreButtonColor("pinkcolour");
 }
 
 function smsshownectr5img() {
@@ -342,7 +246,8 @@ function smsshownectr5img() {
   document.querySelector(".smsnectrrecreationimg5").style.display = "block";
   removeYellowActiveStyle();
   var button = document.getElementById("yellowactivebutton15");
-  button.classList.add("yellowactivebutton");
+  button.classList.add("darkpinkcolour");
+  updateLoadMoreButtonColor("darkpinkcolour");
 }
 
 function smsshowmedical1img() {
@@ -350,7 +255,8 @@ function smsshowmedical1img() {
   document.querySelector(".smsnectrmedicalimg1").style.display = "block";
   removeYellowActiveStyle();
   var button = document.getElementById("yellowactivebutton16");
-  button.classList.add("yellowactivebutton");
+  button.classList.add("pinkcolour");
+  updateLoadMoreButtonColor("pinkcolour");
 }
 
 function smsshowmedical2img() {
@@ -358,31 +264,8 @@ function smsshowmedical2img() {
   document.querySelector(".smsnectrmedicalimg2").style.display = "block";
   removeYellowActiveStyle();
   var button = document.getElementById("yellowactivebutton17");
-  button.classList.add("yellowactivebutton");
-}
-
-function smsshowmedical3img() {
-  hideAllImages();
-  document.querySelector(".smsnectrmedicalimg3").style.display = "block";
-  removeYellowActiveStyle();
-  var button = document.getElementById("yellowactivebutton18");
-  button.classList.add("yellowactivebutton");
-}
-
-function smsshowmedical4img() {
-  hideAllImages();
-  document.querySelector(".smsnectrmedicalimg4").style.display = "block";
-  removeYellowActiveStyle();
-  var button = document.getElementById("yellowactivebutton19");
-  button.classList.add("yellowactivebutton");
-}
-
-function smsshowmedical5img() {
-  hideAllImages();
-  document.querySelector(".smsnectrmedicalimg5").style.display = "block";
-  removeYellowActiveStyle();
-  var button = document.getElementById("yellowactivebutton20");
-  button.classList.add("yellowactivebutton");
+  button.classList.add("orangecolor");
+  updateLoadMoreButtonColor("orangecolor");
 }
 
 // Function to hide all images
@@ -392,10 +275,14 @@ function hideAllImages() {
     image.style.display = "none";
   });
 }
-
 function removeYellowActiveStyle() {
   var buttons = document.querySelectorAll(".categorybuttonmenu");
   buttons.forEach(function (button) {
     button.classList.remove("yellowactivebutton");
+    button.classList.remove("rootcolour");
+    button.classList.remove("orangecolor");
+    button.classList.remove("bluecolour");
+    button.classList.remove("pinkcolour");
+    button.classList.remove("darkpinkcolour");
   });
 }
