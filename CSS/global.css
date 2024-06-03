@@ -426,6 +426,56 @@ body::-webkit-scrollbar {
   line-height: 15.85px;
   text-align: center;
 }
+.categorybuttonmenu {
+  transition: background-color 0.3s, border 0.3s;
+}
+
+/* Root Color */
+.rootcolour,
+#yellowactivebutton1:hover,
+#yellowactivebutton5:hover,
+#yellowactivebutton7:hover {
+  background-color: #745126; /* Change this to your root color */
+  color: white;
+}
+
+/* Orange Color */
+.orangecolor,
+#yellowactivebutton2:hover,
+#yellowactivebutton8:hover,
+#yellowactivebutton12:hover,
+#yellowactivebutton17:hover {
+  background-color: #eb9d47;
+  color: white;
+}
+
+/* Blue Color */
+.bluecolour,
+#yellowactivebutton3:hover,
+#yellowactivebutton6:hover,
+#yellowactivebutton9:hover {
+  background-color: #2e2d4a;
+  color: white;
+}
+
+/* Pink Color */
+.pinkcolour,
+#yellowactivebutton4:hover,
+#yellowactivebutton11:hover,
+#yellowactivebutton14:hover,
+#yellowactivebutton16:hover {
+  background-color: #e87eaa;
+  color: white;
+}
+
+/* Dark Pink Color */
+.darkpinkcolour,
+#yellowactivebutton13:hover,
+#yellowactivebutton15:hover {
+  background-color: #e64772;
+  color: white;
+}
+
 .lodamore:hover {
   background: #655449 !important;
   transition: all 0.3s ease-in-out !important;
