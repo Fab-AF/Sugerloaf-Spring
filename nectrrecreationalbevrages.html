@@ -21,8 +21,9 @@
       crossorigin="anonymous"
     ></script>
 
-    <title>Sugerloaf Springs | Sugerloaf Springs</title>
+    <title>Sugerloaf Springs | NECTR Bevrages</title>
   </head>
+
   <body>
     <div class="maincontainer">
       <header>
@@ -48,10 +49,7 @@
             >
               <ul class="navbar-nav mx-auto mb-2 mb-lg-0 menulinkparent">
                 <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="index.html"
+                  <a class="nav-link" aria-current="page" href="index.html"
                     >Home</a
                   >
                 </li>
@@ -62,8 +60,7 @@
 
                 <li class="nav-item dropdown">
                   <a
-                    class="nav-link dropdown-toggle"
-                    href="storelocator.html"
+                    class="nav-link active dropdown-toggle"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
@@ -72,12 +69,16 @@
                   </a>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="/nectrbevrages.html"
+                      <a
+                        class="dropdown-item"
+                        href="/nectrrecreationalbevrages.html"
                         >Nectr</a
                       >
                     </li>
                     <li>
-                      <a class="dropdown-item" href="/sugerloafspring.html"
+                      <a
+                        class="dropdown-item"
+                        href="/ssrecreationalbevrages.html"
                         >Sugerloaf Springs</a
                       >
                     </li>
@@ -99,25 +100,31 @@
 
       <main>
         <div class="categorypagecontainer container">
-          <div class="blackheadingfont">Sugerloaf Spring Beverages</div>
+          <div class="blackheadingfont">Nectr Recreational Beverages</div>
           <div class="categorybutton">
-            <button
-              class="btn btn-outline-success medicalbutton"
-              id="medicalButton"
-            >
-              Medical
-            </button>
-            <button
-              class="btn btn-outline-success medicalbutton"
-              id="smsButton"
-            >
-              Recreational
-            </button>
+            <div class="categorybutton">
+              <a href="">
+                <button
+                  id="smsBtn"
+                  class="btn btn-outline-success medicalbutton selected"
+                >
+                  Recreational
+                </button>
+              </a>
+              <a href="/nectrmedicalbevrages.html">
+                <button
+                  id="medicalBtn"
+                  class="btn btn-outline-success medicalbutton"
+                >
+                  Medical
+                </button></a
+              >
+            </div>
           </div>
-          <!-- medical container -->
-          <div id="medicalContainer" class="productcatcardcontainer">
-            <!-- <h1>Medical Container</h1> -->
 
+          <div id="smsContent" class="productcatcardcontainer">
+            <!-- Your SMS beverages content here -->
+            <!-- <h1>SMS Products</h1> -->
             <div
               data-aos="fade-up"
               data-aos-easing="ease-in-out"
@@ -125,90 +132,21 @@
               class="productcatcard"
             >
               <img
-                src="./Assests/Medical Beverages -20240515T123045Z-001/Medical Beverages/Sugarloaf Springs Med/lemonade100.png"
+                src="./Assests/Recreational beverages-20240515T123042Z-001/Recreational beverages/Nectr/Rootbeer.png "
                 class="categoryproductimage"
                 alt=""
               />
               <div class="ctproductright">
-                <div class="blackheadingfont text-start">
-                  Cranberry Lemonade 100mg
-                </div>
+                <div class="blackheadingfont text-start">Root beer 10mg</div>
                 <div class="subheadingfont">
-                  Indulge in the perfect blend of tangy cranberries and zesty
-                  lemons with a low calorie Cranberry Lemonade Spritzer. Crafted
-                  for those who crave refreshment, this effervescent beverage
-                  combines the best of both worlds—sweetness from cranberries
-                  and a burst of citrus from fresh lemons.
-                </div>
-                <div class="d-flex align-items-center flex-wrap gap-2">
-                  <button class="categorybuttonmenu">THC:100mg</button>
-                  <button class="categorybuttonmenu">Calories:40</button>
-                  <button class="categorybuttonmenu">Sugar:10g</button>
-                </div>
-                <button class="findstorecat">Find Store</button>
-              </div>
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-easing="ease-in-out"
-              data-aos-duration="500"
-              class="productcatcard"
-            >
-              <img
-                src="./Assests/Medical Beverages -20240515T123045Z-001/Medical Beverages/Sugarloaf Springs Med/mangopeach100.png"
-                class="categoryproductimage"
-                alt=""
-              />
-              <div class="ctproductright">
-                <div class="blackheadingfont text-start">Mango Peach 100mg</div>
-                <div class="subheadingfont">
-                  Where tropical mangoes and juicy peaches collide in a
-                  sparkling symphony. Crafted for those who crave light,
-                  effervescent indulgence, this delightful 0 calorie 0 sugar
-                  seltzer is your passport to a tropical paradise.
-                </div>
-                <div class="d-flex align-items-center flex-wrap gap-2">
-                  <button class="categorybuttonmenu">THC:100mg</button>
-                  <button class="categorybuttonmenu">Calories:0</button>
-                  <button class="categorybuttonmenu">Sugar:0g</button>
-                </div>
-                <button class="findstorecat">Find Store</button>
-              </div>
-            </div>
-          </div>
-          <!-- smsbevrages -->
-          <div
-            id="smsContainer"
-            class="productcatcardcontainer"
-            style="display: none"
-          >
-            <!-- <h1>SMS Container</h1> -->
-            <div
-              data-aos="fade-up"
-              data-aos-easing="ease-in-out"
-              data-aos-duration="500"
-              class="productcatcard"
-            >
-              <img
-                src="./Assests/Recreational beverages-20240515T123042Z-001/Recreational beverages/Sugarloaf Mountain Springs/Mockups-10mgCranLemonade.png"
-                class="categoryproductimage"
-                alt=""
-              />
-              <div class="ctproductright">
-                <div class="blackheadingfont text-start">
-                  Cranberry Lemonade 10mg
-                </div>
-                <div class="subheadingfont">
-                  Indulge in the perfect blend of tangy cranberries and zesty
-                  lemons with a low calorie Cranberry Lemonade Spritzer. Crafted
-                  for those who crave refreshment, this effervescent beverage
-                  combines the best of both worlds—sweetness from cranberries
-                  and a burst of citrus from fresh lemons.
+                  A classic elixir with a twist that conjures memories of
+                  old-fashioned soda fountains and summer afternoons. Savor the
+                  smooth sweetness and subtle spice of this classic beverage.
                 </div>
                 <div class="d-flex align-items-center flex-wrap gap-2">
                   <button class="categorybuttonmenu">THC:10mg</button>
-                  <button class="categorybuttonmenu">Calories:40</button>
-                  <button class="categorybuttonmenu">Sugar:10g</button>
+                  <button class="categorybuttonmenu">Calories: 132</button>
+                  <button class="categorybuttonmenu">Sugar:33g</button>
                 </div>
                 <button class="findstorecat">Find Store</button>
               </div>
@@ -220,22 +158,23 @@
               class="productcatcard"
             >
               <img
-                src="./Assests/Recreational beverages-20240515T123042Z-001/Recreational beverages/Sugarloaf Mountain Springs/mangopeach10.png"
+                src="./Assests/Recreational beverages-20240515T123042Z-001/Recreational beverages/Nectr/blueginger.png "
                 class="categoryproductimage"
                 alt=""
               />
               <div class="ctproductright">
-                <div class="blackheadingfont text-start">Mango Peach 10mg</div>
+                <div class="blackheadingfont text-start">Blue ginger 10mg</div>
                 <div class="subheadingfont">
-                  Where tropical mangoes and juicy peaches collide in a
-                  sparkling symphony. Crafted for those who crave light,
-                  effervescent indulgence, this delightful 0 calorie 0 sugar
-                  seltzer is your passport to a tropical paradise.
+                  A symphony of flavors that harmonize the sweet and tart notes
+                  of plump blueberries with the warm kick of freshly grated
+                  ginger root. Each sip is like stepping onto a moss-covered
+                  trail, the tangy berries bursting forth, while the ginger
+                  dances on your tongue.
                 </div>
                 <div class="d-flex align-items-center flex-wrap gap-2">
                   <button class="categorybuttonmenu">THC:10mg</button>
-                  <button class="categorybuttonmenu">Calories:0</button>
-                  <button class="categorybuttonmenu">Sugar:0g</button>
+                  <button class="categorybuttonmenu">Calories: 160</button>
+                  <button class="categorybuttonmenu">Sugar:40G</button>
                 </div>
                 <button class="findstorecat">Find Store</button>
               </div>
@@ -247,23 +186,20 @@
               class="productcatcard"
             >
               <img
-                src="./Assests/Recreational beverages-20240515T123042Z-001/Recreational beverages/Sugarloaf Mountain Springs/Mockups-10mgCherryLime.png"
+                src="./Assests/Recreational beverages-20240515T123042Z-001/Recreational beverages/Nectr/pinkbanana.png "
                 class="categoryproductimage"
                 alt=""
               />
               <div class="ctproductright">
-                <div class="blackheadingfont text-start">Cherry Lime 10mg</div>
+                <div class="blackheadingfont text-start">Pink Banana 10mg</div>
                 <div class="subheadingfont">
-                  Indulge in the vibrant harmony of ripe cherries and tangy
-                  limes with our 0 calorie 0 sugar Cherry Lime Seltzer. Crafted
-                  for those who seek light, effervescent refreshment, this
-                  delightful beverage transports you to a sunny orchard with
-                  every sip.
+                  A fusion of luscious strawberry bananas and a hint of exotic
+                  mystery.
                 </div>
                 <div class="d-flex align-items-center flex-wrap gap-2">
                   <button class="categorybuttonmenu">THC:10mg</button>
-                  <button class="categorybuttonmenu">Calories:0</button>
-                  <button class="categorybuttonmenu">Sugar:0g</button>
+                  <button class="categorybuttonmenu">Calories: 132</button>
+                  <button class="categorybuttonmenu">Sugar:33g</button>
                 </div>
                 <button class="findstorecat">Find Store</button>
               </div>
@@ -275,25 +211,21 @@
               class="productcatcard"
             >
               <img
-                src="./Assests/Recreational beverages-20240515T123042Z-001/Recreational beverages/Sugarloaf Mountain Springs/lemonade100.png"
+                src="./Assests/Recreational beverages-20240515T123042Z-001/Recreational beverages/Nectr/orangesoda.png "
                 class="categoryproductimage"
                 alt=""
               />
               <div class="ctproductright">
-                <div class="blackheadingfont text-start">
-                  Cranberry Lemonade 100mg
-                </div>
+                <div class="blackheadingfont text-start">Orange Soda 100mg</div>
                 <div class="subheadingfont">
-                  Indulge in the perfect blend of tangy cranberries and zesty
-                  lemons with a low calorie Cranberry Lemonade Spritzer. Crafted
-                  for those who crave refreshment, this effervescent beverage
-                  combines the best of both worlds—sweetness from cranberries
-                  and a burst of citrus from fresh lemons.
+                  A sun-kissed delight that captures the essence of citrus
+                  groves in every effervescent sip. This liquid sunshine dances
+                  on your taste buds balancing sweetness with a zesty kick.
                 </div>
                 <div class="d-flex align-items-center flex-wrap gap-2">
                   <button class="categorybuttonmenu">THC:100mg</button>
-                  <button class="categorybuttonmenu">Calories: 40</button>
-                  <button class="categorybuttonmenu">Sugar: 10g</button>
+                  <button class="categorybuttonmenu">Calories: 132</button>
+                  <button class="categorybuttonmenu">Sugar:33g</button>
                 </div>
                 <button class="findstorecat">Find Store</button>
               </div>
@@ -305,23 +237,49 @@
               class="productcatcard"
             >
               <img
-                src="./Assests/Recreational beverages-20240515T123042Z-001/Recreational beverages/Sugarloaf Mountain Springs/cherrylime100.png"
+                src="./Assests/Recreational beverages-20240515T123042Z-001/Recreational beverages/Nectr/Mockups-100mgAURootBeer.png "
                 class="categoryproductimage"
                 alt=""
               />
               <div class="ctproductright">
-                <div class="blackheadingfont text-start">Cherry Lime 100mg</div>
+                <div class="blackheadingfont text-start">Rootbeer 100mg</div>
                 <div class="subheadingfont">
-                  Indulge in the vibrant harmony of ripe cherries and tangy
-                  limes with our 0 calorie 0 sugar Cherry Lime Seltzer. Crafted
-                  for those who seek light, effervescent refreshment, this
-                  delightful beverage transports you to a sunny orchard with
-                  every sip.
+                  A classic elixir with a twist that conjures memories of
+                  old-fashioned soda fountains and summer afternoons. Savor the
+                  smooth sweetness and subtle spice of this classic beverage.
                 </div>
                 <div class="d-flex align-items-center flex-wrap gap-2">
                   <button class="categorybuttonmenu">THC:100mg</button>
-                  <button class="categorybuttonmenu">Calories:0</button>
-                  <button class="categorybuttonmenu">Sugar:0g</button>
+                  <button class="categorybuttonmenu">Calories: 132</button>
+                  <button class="categorybuttonmenu">Sugar:33g</button>
+                </div>
+                <button class="findstorecat">Find Store</button>
+              </div>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-easing="ease-in-out"
+              data-aos-duration="500"
+              class="productcatcard"
+            >
+              <img
+                src="./Assests/Recreational beverages-20240515T123042Z-001/Recreational beverages/Nectr/Mockups-100mgAUBlueGinger.png "
+                class="categoryproductimage"
+                alt=""
+              />
+              <div class="ctproductright">
+                <div class="blackheadingfont text-start">Blue Ginger 100mg</div>
+                <div class="subheadingfont">
+                  A symphony of flavors that harmonize the sweet and tart notes
+                  of plump blueberries with the warm kick of freshly grated
+                  ginger root. Each sip is like stepping onto a moss-covered
+                  trail, the tangy berries bursting forth, while the ginger
+                  dances on your tongue.
+                </div>
+                <div class="d-flex align-items-center flex-wrap gap-2">
+                  <button class="categorybuttonmenu">THC:100mg</button>
+                  <button class="categorybuttonmenu">Calories: 160</button>
+                  <button class="categorybuttonmenu">Sugar:40g</button>
                 </div>
                 <button class="findstorecat">Find Store</button>
               </div>
@@ -399,10 +357,10 @@
       </footer>
       <!-- Footer End -->
     </div>
-  </body>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script src="./JavaScript/main.js"></script>
-  <script src="./JavaScript/sugerloafspring.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./JavaScript/main.js"></script>
+    <script src="./JavaScript/nectr.js"></script>
+  </body>
 </html>
