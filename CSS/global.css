@@ -154,6 +154,26 @@ body::-webkit-scrollbar {
   width: 30%;
 }
 /* our brancds */
+.nectrlogo {
+  mix-blend-mode: multiply;
+  width: 20%;
+  margin: auto;
+}
+.nectrrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.sugerloafrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 3rem;
+}
 .ourbrandscontainer {
   background-color: hsl(21, 100%, 94%);
   margin: 3rem 0rem;
@@ -733,6 +753,7 @@ body::-webkit-scrollbar {
 .fc4 {
   right: 6%;
 }
+
 @media (max-width: 768px) {
   .logo {
     width: 50%;
@@ -746,8 +767,8 @@ body::-webkit-scrollbar {
     font-size: 28px;
     font-weight: 600;
     line-height: 30px;
-    text-align: center;
     color: var(--navyblue);
+    text-align: left;
   }
   .blackheadingfont {
     font-size: 22px;
@@ -867,6 +888,11 @@ body::-webkit-scrollbar {
     margin: auto;
   }
   /* footer */
+  .footercontainer {
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+  }
   .upperfootercontainer > div {
     width: 90%;
   }
