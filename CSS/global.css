@@ -37,6 +37,7 @@ body::-webkit-scrollbar {
   color: var(--bs-navbar-active-color);
   font-weight: 600;
   border-bottom: 1px solid black;
+  width: fit-content;
 }
 .blackheadingfont {
   font-size: 35px;
@@ -436,7 +437,6 @@ body::-webkit-scrollbar {
   border-bottom: 1px solid #000;
   border-radius: 10rem;
   padding: 0.5rem;
-  width: fit-content;
 }
 
 .lodamore {
@@ -771,7 +771,7 @@ body::-webkit-scrollbar {
     padding: 1rem 1rem;
   }
   .headingfont {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 600;
     line-height: 30px;
     color: var(--navyblue);
@@ -855,7 +855,9 @@ body::-webkit-scrollbar {
     font-size: 16px;
   }
   .exploremenu {
-    gap: 2rem;
+    gap: 1rem;
+    justify-content: center;
+    font-size: 10px;
   }
   .recreation {
     padding: 0.8rem 1rem;
@@ -901,7 +903,7 @@ body::-webkit-scrollbar {
     left: 0%;
   }
   .upperfootercontainer > div {
-    width: 90%;
+    width: 100%;
   }
   .lfooterrow1 {
     flex-direction: column;
@@ -935,5 +937,32 @@ body::-webkit-scrollbar {
   .fc3,
   .fc4 {
     display: none;
+  }
+  .upperfootercontainer {
+    background-color: #fff9ed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0rem;
+    padding: 2rem 1rem;
+  }
+  .lowerfootercontainer {
+    background-color: var(--primary-color);
+    padding: 2rem 1rem !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .sugerloafrow {
+    margin-top: 2rem;
+  }
+  .nectrlogo {
+    width: 50%;
+  }
+  .singlerownectr {
+    justify-content: flex-start;
   }
 }
