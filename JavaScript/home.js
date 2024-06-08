@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
     menuItem.style.textDecoration = "none";
     menuItem.style.borderBottom = "1px solid #000"; // Adjust color and thickness as needed
     menuItem.style.borderRadius = "10rem"; // Adjust border radius as needed
-    menuItem.style.padding = "0.5rem";
+    menuItem.style.padding = "1rem 1rem";
   }
 
   // Set underline for default selected menu item (Nectr)
