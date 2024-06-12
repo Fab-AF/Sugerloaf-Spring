@@ -32,6 +32,13 @@ body {
 body::-webkit-scrollbar {
   display: none;
 }
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: var(--bs-navbar-active-color);
+  font-weight: 600;
+  border-bottom: 1px solid black;
+  width: fit-content;
+}
 .blackheadingfont {
   font-size: 35px;
   font-weight: 700;
@@ -135,6 +142,9 @@ body::-webkit-scrollbar {
   position: relative;
   left: 8%;
 }
+.tastepagecontainer {
+  padding: 3rem 0rem;
+}
 .card1 {
   background-color: #deeef4;
   border-radius: 1rem;
@@ -154,9 +164,29 @@ body::-webkit-scrollbar {
   width: 30%;
 }
 /* our brancds */
+.nectrlogo {
+  mix-blend-mode: multiply;
+  width: 15%;
+  margin: auto;
+}
+.nectrrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.sugerloafrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 3rem;
+}
 .ourbrandscontainer {
   background-color: hsl(21, 100%, 94%);
-  margin: 3rem 0rem;
+  margin: 0rem 0rem;
   padding: 3rem 0rem;
 }
 .singlerownectr {
@@ -166,18 +196,17 @@ body::-webkit-scrollbar {
   gap: 2rem;
   scrollbar-color: #e4e0d7 transparent !important;
   /* scrollbar-width: thin; */
-  margin: 1rem 0rem;
+  margin: 0rem 0rem;
 }
 .singlerownectr img {
   width: 10%;
-  mix-blend-mode: darken;
 }
 .singlerowsms {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  margin: 1rem 0rem;
+  margin: 0rem 0rem;
   scrollbar-color: #e4e0d7 transparent !important;
   /* scrollbar-width: thin; */
 }
@@ -733,6 +762,7 @@ body::-webkit-scrollbar {
 .fc4 {
   right: 6%;
 }
+
 @media (max-width: 768px) {
   .logo {
     width: 50%;
@@ -743,11 +773,11 @@ body::-webkit-scrollbar {
     padding: 1rem 1rem;
   }
   .headingfont {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 600;
     line-height: 30px;
-    text-align: center;
     color: var(--navyblue);
+    text-align: left;
   }
   .blackheadingfont {
     font-size: 22px;
@@ -827,7 +857,9 @@ body::-webkit-scrollbar {
     font-size: 16px;
   }
   .exploremenu {
-    gap: 2rem;
+    gap: 1rem;
+    justify-content: center;
+    font-size: 10px;
   }
   .recreation {
     padding: 0.8rem 1rem;
@@ -867,8 +899,13 @@ body::-webkit-scrollbar {
     margin: auto;
   }
   /* footer */
+  .footercontainer {
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+  }
   .upperfootercontainer > div {
-    width: 90%;
+    width: 100%;
   }
   .lfooterrow1 {
     flex-direction: column;
@@ -902,5 +939,32 @@ body::-webkit-scrollbar {
   .fc3,
   .fc4 {
     display: none;
+  }
+  .upperfootercontainer {
+    background-color: #fff9ed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0rem;
+    padding: 2rem 1rem;
+  }
+  .lowerfootercontainer {
+    background-color: var(--primary-color);
+    padding: 2rem 1rem !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .sugerloafrow {
+    margin-top: 2rem;
+  }
+  .nectrlogo {
+    width: 50%;
+  }
+  .singlerownectr {
+    justify-content: flex-start;
   }
 }
