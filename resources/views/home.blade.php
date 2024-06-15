@@ -128,7 +128,7 @@
                     Blue Ginger 100mg
                   </button> -->
                     </div>
-                    <a href="./nectrrecreationalbevrages.html" class="text-decoration-none">
+                    <a href="/nectr-beverages" class="text-decoration-none">
                         <button id="loadMoreNectr" class="lodamore">
                             Load More
                             <img src="/images/whitearrowsvg.svg" alt="Load More" />
@@ -215,7 +215,7 @@
                             Mango Peach 100mg
                         </button>
                     </div>
-                    <a href="./ssrecreationalbevrages.html" class="text-decoration-none">
+                    <a href="/sugerloaf-springs" class="text-decoration-none">
                         <button id="loadMoreSms" class="lodamore">
                             Load More
                             <img src="/images/whitearrowsvg.svg" alt="" />
