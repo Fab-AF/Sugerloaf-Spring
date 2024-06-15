@@ -1,1 +1,0 @@
-<div class="overlay" id="loader" style="display:none;"><i class="fas fa-2x fa-sync-alt fa-spin"></i></div><?php /**PATH C:\xampp\htdocs\sugerloaf_admin\resources\views/admin/common/loader.blade.php ENDPATH**/ ?>

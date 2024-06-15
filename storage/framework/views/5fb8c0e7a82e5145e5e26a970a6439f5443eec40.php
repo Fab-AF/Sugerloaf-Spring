@@ -1,3 +1,0 @@
-<script type="text/javascript" src="https://maps.google.com/maps/api/js?key=<?php echo e(env('GOOGLE_API_KEY')); ?>&sensor=false&libraries=places&language=en-AU"></script>
-<script src="<?php echo e(asset('js/admin/autocomplete.js')); ?>"></script>
-<script> autocompleteInit("<?php echo e($frmId); ?>","<?php echo e($addressBoxId); ?>"); </script><?php /**PATH C:\xampp\htdocs\sugerloaf_admin\resources\views/admin/common/googleAutocompleteAddress.blade.php ENDPATH**/ ?>
