@@ -1,0 +1,10 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/css/app.css": "/css/app.css",
+    "/js/toster.js": "/js/toster.js",
+    "/js/admin/global.js": "/js/admin/global.js",
+    "/js/admin/parents/index.js": "/js/admin/parents/index.js",
+    "/js/admin/parents/parents.js": "/js/admin/parents/parents.js",
+    "/js/admin/teachers/index.js": "/js/admin/teachers/index.js",
+    "/js/admin/teachers/teachers.js": "/js/admin/teachers/teachers.js"
+}
