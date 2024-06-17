@@ -1,0 +1,1 @@
+<div class="overlay" id="loader" style="display:none;"><i class="fas fa-2x fa-sync-alt fa-spin"></i></div>

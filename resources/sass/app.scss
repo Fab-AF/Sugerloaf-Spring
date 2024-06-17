@@ -1,0 +1,48 @@
+// Variables
+@import 'variables';
+
+// select 2
+@import '~select2/dist/css/select2.min.css';
+
+// Bootstrap
+@import '~admin-lte/build/scss/adminlte';
+
+@import '~datatables/media/css/jquery.dataTables.css';
+
+@import "toster";
+
+label:not(.form-check-label):not(.custom-file-label) {
+  font-weight: 500 !important;
+}
+
+.select2-search__field {
+    border: 0px solid #ced4da !important;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+   margin-left: 1px !important;	
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__display {
+   padding-left: 15px !important;
+}
+
+.div-header-card {
+   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.div-header-title {
+  float: left;
+}
+
+.div-header-collopase {
+  float: right; margin-right: -0.625rem;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__rendered {
+  padding: 0 !important;
+}
+
+.error {
+  color : red;
+}
