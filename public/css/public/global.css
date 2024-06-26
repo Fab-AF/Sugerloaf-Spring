@@ -587,23 +587,21 @@ body::-webkit-scrollbar {
     text-align: left;
     text-wrap: wrap;
 }
-.gm-style-iw{
+.gm-style-iw {
     padding-inline-end: 0px;
     padding-bottom: 0px;
     padding-top: 0px;
     max-width: 262px;
     max-height: max-content !important;
     min-width: 0px;
-
 }
-.gm-style-iw-d{
+.gm-style-iw-d {
     padding-inline-end: 0px;
     padding-bottom: 0px;
     padding-top: 0px;
     max-width: 262px;
     max-height: max-content !important;
     min-width: 0px;
-
 }
 .userprofiletestimonial {
     width: 20%;
@@ -799,7 +797,13 @@ body::-webkit-scrollbar {
 .fc4 {
     right: 6%;
 }
-
+.footercontainer .headingfont {
+    font-size: 36px;
+    line-height: 35px;
+}
+.footercontainer .upperfootercontainer {
+    gap: 0rem;
+}
 @media (max-width: 900px) {
     .logo {
         width: 50%;
