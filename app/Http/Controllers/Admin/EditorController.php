@@ -22,7 +22,7 @@ class EditorController extends Controller
 		$page = Cms::where("id", $pageid)->first();
 		$content = $page->description;
 	
-		File::put('editor.html', $content);		
+		File::put($_SERVER['DOCUMENT_ROOT'].'/public/editor.html', $content);
 		return view('admin.editor', ["page" => $page, 'type' => $type, 'extraParam' => $extraParam]);
 	 }
 

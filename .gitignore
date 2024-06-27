@@ -17,3 +17,8 @@ yarn-error.log
 /.vscode
 package-lock.json
 composer.lock
+.htaccess
+editor.html
+old/
+*.zip
+*.sql

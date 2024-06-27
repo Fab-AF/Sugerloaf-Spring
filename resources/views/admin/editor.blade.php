@@ -106,7 +106,7 @@
 					$(".component-properties-tab").hide();
 				}
 
-         		Vvveb.Builder.init('/editor.html', function() {
+         		Vvveb.Builder.init('/public/editor.html', function() {
 					//run code after page/iframe is loaded
 				});
 
