@@ -25,3 +25,4 @@ old/
 /app/Http/Controllers/Admin/EditorController.php
 /resources/views/admin/editor.blade.php
 /storage/logs/laravel.log
+/public/editor.html
