@@ -1,1 +1,169 @@
-.aboutright,.abtheroparent{display:flex}.nectersugar{font-family:Bebas Neue;font-size:200px;font-weight:400;line-height:180.85px;letter-spacing:30px;text-align:left;color:#eee600;opacity:.5}.aboutheropage{height:115vh;background-color:#fbf6f2}.groupofcanabout{width:100%;position:absolute;top:40%;left:0}.aboutright{flex-direction:column;align-items:center;justify-content:center;gap:1rem;width:75%;height:80vh}.ourmission,.ourvision{padding:3rem!important;margin:2rem auto;border-radius:1rem;gap:5rem}.aboutright>.blackheadingfont{font-size:60px;font-weight:700;line-height:70px;text-align:left}.aboutright>.subheading,.ourmission .subheading,.ourvision .subheading{font-size:20px;font-weight:400;line-height:35px;text-align:left}.ourmissionleft img,.ourvisionleft img{mix-blend-mode:multiply}.aboutright>.subheading{color:#797979}.ourvision .blackheadingfont,.ourvision .subheading{width:fit-content;color:#fff}.aboutsecondhero>img{width:67%;display:flex;justify-content:center;align-items:center;margin:2rem auto}.ourmission .blackheadingfont{width:fit-content}.ourmission .subheading{width:fit-content;margin-top:1rem}.ourmissionleft,.ourmissionright,.ourvisionright{width:50%}.ourmission{background-color:#e9f3f6}.ourvision{background-color:#107e6e}.ourvision .subheading{margin-top:1rem}.ourmissionleft,.ourvisionleft{width:50%;height:auto;background-color:#fff;border-radius:19% 81% 20% 80%/89% 30% 70% 11%}@media (max-width:900px){.aboutheropage,.aboutright{height:100%}.ourmission,.ourvision{padding:2rem 0!important}.abtheroparent{flex-direction:column}.nectersugar{font-size:70px;line-height:90px}.groupofcanabout{top:74%;display:none}.aboutright{width:100%}.aboutright .blackheadingfont{font-size:28px;line-height:40px}.aboutsecondhero>img{width:100%}.ourvision{flex-direction:column-reverse}.ourmission{flex-direction:column}.ourmissionleft img{mix-blend-mode:multiply}.ourmissionleft,.ourvisionleft{width:70%;margin:auto}.ourmissionleft img,.ourvisionleft img{mix-blend-mode:multiply;width:100%}.ourmissionright,.ourvisionright{width:100%;padding:0 1rem}.ourmission .subheading{font-size:16px;line-height:30px}}
+.aboutright,
+.abtheroparent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nectersugar {
+    font-family: Bebas Neue;
+    font-size: 200px;
+    font-weight: 400;
+    line-height: 180.85px;
+    letter-spacing: 30px;
+    text-align: left;
+    color: #eee600;
+    opacity: 0.5;
+}
+.aboutheropage {
+    height: 80vh;
+    background-color: #fbf6f2;
+}
+.groupofcanabout {
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    left: 0;
+}
+.aboutright,#aboutleftright{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 50% !important;
+    height: 80vh;
+}
+.aboutleft,#aboutleftcss {
+    width: 50% !important;
+}
+#aboutleftcss>img {
+   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+}
+.ourmission,
+.ourvision {
+    padding: 3rem !important;
+    margin: 2rem auto;
+    border-radius: 1rem;
+    gap: 5rem;
+}
+.aboutright > .blackheadingfont {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 70px;
+    text-align: left;
+}
+.aboutright > .subheading,
+.ourmission .subheading,
+.ourvision .subheading {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 35px;
+    text-align: left;
+}
+.ourmissionleft img,
+.ourvisionleft img {
+    mix-blend-mode: multiply;
+}
+.aboutright > .subheading {
+    color: #797979;
+}
+.ourvision .blackheadingfont,
+.ourvision .subheading {
+    width: fit-content;
+    color: #fff;
+}.aboutleft>img{
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+}
+.aboutsecondhero > img {
+    width: 67%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+}
+.ourmission .blackheadingfont {
+    width: fit-content;
+}
+.ourmission .subheading {
+    width: fit-content;
+    margin-top: 1rem;
+}
+.ourmissionleft,
+.ourmissionright,
+.ourvisionright {
+    width: 50%;
+}
+.ourmission {
+    background-color: #e9f3f6;
+}
+.ourvision {
+    background-color: #107e6e;
+}
+.ourvision .subheading {
+    margin-top: 1rem;
+}
+.ourmissionleft,
+.ourvisionleft {
+    width: 50%;
+    height: auto;
+    background-color: #fff;
+    border-radius: 19% 81% 20% 80%/89% 30% 70% 11%;
+}
+@media (max-width: 900px) {
+    .aboutheropage,
+    .aboutright {
+        height: 100%;
+    }
+    .ourmission,
+    .ourvision {
+        padding: 2rem 0 !important;
+    }
+    .abtheroparent {
+        flex-direction: column;
+    }
+    .nectersugar {
+        font-size: 70px;
+        line-height: 90px;
+    }
+    .groupofcanabout {
+        top: 74%;
+        display: none;
+    }
+    .aboutright {
+        width: 100%;
+    }
+    .aboutright .blackheadingfont {
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .aboutsecondhero > img {
+        width: 100%;
+    }
+    .ourvision {
+        flex-direction: column-reverse;
+    }
+    .ourmission {
+        flex-direction: column;
+    }
+    .ourmissionleft img {
+        mix-blend-mode: multiply;
+    }
+    .ourmissionleft,
+    .ourvisionleft {
+        width: 70%;
+        margin: auto;
+    }
+    .ourmissionleft img,
+    .ourvisionleft img {
+        mix-blend-mode: multiply;
+        width: 100%;
+    }
+    .ourmissionright,
+    .ourvisionright {
+        width: 100%;
+        padding: 0 1rem;
+    }
+    .ourmission .subheading {
+        font-size: 16px;
+        line-height: 30px;
+    }
+}
