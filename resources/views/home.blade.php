@@ -23,8 +23,9 @@
         <div class="headingfont text-center">Explore Flavors</div>
         <div>
             <ul class="exploremenu">
-                <li onclick="shownectr1img()">NECTR BEVERAGES</li>
-                <li onclick="smsshownectr1img() ">Sugarloaf Springs Beverages</li>
+                <li onclick="shownectr1img()"><img src="/images/nectrlogo.png" alt="necterlogo" class="nectrlogofortoggle"></li>
+                <li onclick="smsshownectr1img() ">              <img src="/images/logo.svg" alt="sugerloaflogo" class="sugerlogofortoggle">
+                </li>
             </ul>
         </div>
         <div id="nectr" class="explorerowthree container w-100 position-relative">

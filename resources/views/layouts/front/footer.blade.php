@@ -31,17 +31,17 @@
 	  </div>
 	  <div>
 		<ul>
-		  <a href="{{route('nectr-beverages')}}"> <li>Product</li></a>
+		  <a href="{{route('nectr-beverages')}}"> <li>Products</li></a>
 		  <a href="{{route('store-locator')}}"> <li>Store locator</li></a>
 		  <a href="{{route('about-us')}}"> <li>About us</li></a>
 		</ul>
 	  </div>
-	  <div>
+	  <!-- <div>
 		<ul>
 		  <a href="javascript:void(0);"> <li>Terms & condition</li></a>
 		  <a href="javascript:void(0);"> <li>Datenschutz</li></a>
 		</ul>
-	  </div>
+	  </div> -->
 	  <div>
 		<ul>
 		  <a href="" target="_blank">
@@ -50,9 +50,9 @@
 		  <a href="" target="_blank">
 			<img src="/images/footerinsta.svg" alt="fb"
 		  /></a>
-		  <a href="" target="_blank">
+		  <!-- <a href="" target="_blank">
 			<img src="/images/footeryoutube.svg" alt="snap"
-		  /></a>
+		  /></a> -->
 		</ul>
 	  </div>
 	</div>
