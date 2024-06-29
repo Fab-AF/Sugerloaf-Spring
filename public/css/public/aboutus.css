@@ -15,7 +15,7 @@
     opacity: 0.5;
 }
 .aboutheropage {
-    height: 100vh;
+    height: 80vh;
     background-color: #fbf6f2;
 }
 .groupofcanabout {
@@ -24,7 +24,7 @@
     top: 40%;
     left: 0;
 }
-.aboutright {
+.aboutright,#aboutleftright{
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -32,8 +32,11 @@
     width: 50% !important;
     height: 80vh;
 }
-.aboutleft {
+.aboutleft,#aboutleftcss {
     width: 50% !important;
+}
+#aboutleftcss>img {
+   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
 }
 .ourmission,
 .ourvision {
